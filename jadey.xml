@@ -1,36 +1,36 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="controls_repeat" id="483" inline="true" x="-703" y="-768">
+  <block type="controls_repeat" id="1" inline="true" x="-703" y="-768">
     <value name="TIMES">
-      <block type="math_number" id="490">
+      <block type="math_number" id="2">
         <field name="NUM">20</field>
       </block>
     </value>
     <statement name="DO">
-      <block type="movement_forward" id="506"></block>
+      <block type="movement_forward" id="3"></block>
     </statement>
     <next>
-      <block type="robot_delay" id="746" inline="true">
+      <block type="robot_delay" id="4" inline="true">
         <value name="DELAY">
-          <block type="math_number" id="747">
+          <block type="math_number" id="5">
             <field name="NUM">20</field>
           </block>
         </value>
         <next>
-          <block type="controls_repeat" id="577" inline="true">
+          <block type="controls_repeat" id="6" inline="true">
             <value name="TIMES">
-              <block type="math_number" id="584">
+              <block type="math_number" id="7">
                 <field name="NUM">4</field>
               </block>
             </value>
             <statement name="DO">
-              <block type="oled_cleardisplay" id="549">
+              <block type="oled_cleardisplay" id="8">
                 <next>
-                  <block type="oled_linerect" id="621">
+                  <block type="oled_linerect" id="9">
                     <field name="OBJECT">RECT</field>
                     <next>
-                      <block type="oled_cleardisplay" id="651">
+                      <block type="oled_cleardisplay" id="10">
                         <next>
-                          <block type="led_select" id="636" inline="true">
+                          <block type="led_select" id="11" inline="true">
                             <field name="ACTION">FLASH</field>
                           </block>
                         </next>
@@ -41,14 +41,38 @@
               </block>
             </statement>
             <next>
-              <block type="robot_delay" id="762" inline="true">
+              <block type="robot_delay" id="12" inline="true">
                 <value name="DELAY">
-                  <block type="math_number" id="763">
+                  <block type="math_number" id="13">
                     <field name="NUM">20</field>
                   </block>
                 </value>
                 <next>
-                  <block type="movement_reverse" id="683"></block>
+                  <block type="controls_repeat" id="22" inline="true">
+                    <value name="TIMES">
+                      <block type="math_number" id="23">
+                        <field name="NUM">4</field>
+                      </block>
+                    </value>
+                    <statement name="DO">
+                      <block type="movement_reverse" id="14"></block>
+                    </statement>
+                    <next>
+                      <block type="movement_left" id="48">
+                        <next>
+                          <block type="movement_left" id="64">
+                            <next>
+                              <block type="movement_right" id="75">
+                                <next>
+                                  <block type="movement_right" id="85"></block>
+                                </next>
+                              </block>
+                            </next>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
                 </next>
               </block>
             </next>
@@ -57,8 +81,5 @@
       </block>
     </next>
   </block>
-  <block type="undefined" id="197" x="0" y="0"></block>
-  <block type="undefined" id="198" x="0" y="0"></block>
-  <block type="undefined" id="199" x="0" y="0"></block>
-  <block type="undefined" id="200" x="0" y="0"></block>
+  <block type="undefined" id="15" x="0" y="0"></block>
 </xml>
